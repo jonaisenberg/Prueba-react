@@ -57,7 +57,7 @@ function Clima() {
                 <div className="datos-climaticos">
                     <p className="temperatura">Temperatura: {temperatura} °C</p>
                     <p className="estado">{estado}</p>
-                    <img className="img" src={icono} />
+                    <img className="img" src={icono} alt='imagen del clima de la region seleccionada' />
                 </div>
             )}
             <h2>Datos de los últimos sismos</h2>

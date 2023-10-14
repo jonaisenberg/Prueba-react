@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Sismo from "./Sismo";
-// import dato from "../assets/datos/datos";
+// import dato from "../assets/datos/datos"; por si me banean de la Api por hacer muchas solicitudes
 
 const api = "https://api.gael.cloud/general/public/clima";
 const urlImagen =
@@ -57,7 +57,7 @@ function Clima() {
                 <div className="datos-climaticos">
                     <p className="temperatura">Temperatura: {temperatura} °C</p>
                     <p className="estado">{estado}</p>
-                    <img className="img" src={icono} alt='imagen del clima de la region seleccionada' />
+                    <img className="img" src={icono} alt={`imagen de cielo ${estado}`} />
                 </div>
             )}
             <h2>Datos de los últimos sismos</h2>
